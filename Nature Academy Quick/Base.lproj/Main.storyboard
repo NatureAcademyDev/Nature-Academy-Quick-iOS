@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main NA Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXS-h9-OS0">
@@ -65,28 +66,35 @@
                         <viewControllerLayoutGuide type="bottom" id="nii-bO-IV3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z5d-bR-NH4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homework" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ld-7H-lYM">
-                                <frame key="frameInset" minX="115" minY="38" width="173" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homework" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ld-7H-lYM">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cor-6a-JVa">
-                                <frame key="frameInset" minX="8" minY="20" width="127" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TNw-KE-a5N">
-                                <frame key="frameInset" minX="16" minY="146" width="343" height="521"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cor-6a-JVa"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TNw-KE-a5N">
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="9ld-7H-lYM" firstAttribute="leading" secondItem="Z5d-bR-NH4" secondAttribute="leadingMargin" constant="99" id="0cW-tp-F1i"/>
+                            <constraint firstItem="TNw-KE-a5N" firstAttribute="leading" secondItem="Z5d-bR-NH4" secondAttribute="leading" constant="12" id="F0p-aG-CqA"/>
+                            <constraint firstItem="Cor-6a-JVa" firstAttribute="leading" secondItem="Z5d-bR-NH4" secondAttribute="leading" constant="8" id="Ghe-f8-xCl"/>
+                            <constraint firstAttribute="trailing" secondItem="TNw-KE-a5N" secondAttribute="trailing" constant="12" id="H4c-zJ-tXu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9ld-7H-lYM" secondAttribute="trailing" constant="71" id="NuU-5t-dYT"/>
+                            <constraint firstItem="Cor-6a-JVa" firstAttribute="top" secondItem="em9-tT-rRu" secondAttribute="bottom" id="Thf-05-WoQ"/>
+                            <constraint firstItem="Cor-6a-JVa" firstAttribute="leading" secondItem="Z5d-bR-NH4" secondAttribute="leadingMargin" constant="-8" id="Ugq-M4-fSa"/>
+                            <constraint firstItem="TNw-KE-a5N" firstAttribute="top" secondItem="Cor-6a-JVa" secondAttribute="bottom" constant="15" id="XEa-sp-Jtq"/>
+                            <constraint firstItem="nii-bO-IV3" firstAttribute="top" secondItem="TNw-KE-a5N" secondAttribute="bottom" id="d7m-Iy-HSm"/>
+                            <constraint firstItem="9ld-7H-lYM" firstAttribute="top" secondItem="em9-tT-rRu" secondAttribute="bottom" constant="18" id="iqL-uB-Cmd"/>
+                            <constraint firstItem="TNw-KE-a5N" firstAttribute="top" secondItem="Cor-6a-JVa" secondAttribute="bottom" constant="15" id="u07-eM-PlT"/>
+                            <constraint firstItem="Cor-6a-JVa" firstAttribute="top" secondItem="em9-tT-rRu" secondAttribute="bottom" id="zud-UH-gkK"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="JDS-UM-cCd" appends="YES" id="tD4-jI-TQb"/>
                             <outletCollection property="gestureRecognizers" destination="Ezc-hr-ESG" appends="YES" id="BQZ-O5-lcA"/>
@@ -121,7 +129,7 @@
                         <viewControllerLayoutGuide type="bottom" id="vel-g5-ln7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Tsi-Sc-I8p">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yq-Hg-tRp">
@@ -171,7 +179,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Mrb-fu-aNN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hlT-1e-wwj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weekly Wisdom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isl-LW-644">
@@ -218,8 +226,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="9ft-bQ-p84"/>
-        <segue reference="sAv-jc-a5E"/>
+        <segue reference="GwU-GR-jKz"/>
         <segue reference="prn-FT-nmG"/>
-        <segue reference="0Ur-OF-cwT"/>
+        <segue reference="Fo3-8y-aBC"/>
     </inferredMetricsTieBreakers>
 </document>
