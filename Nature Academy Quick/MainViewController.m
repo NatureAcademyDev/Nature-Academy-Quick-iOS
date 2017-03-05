@@ -27,7 +27,10 @@
 
 - (IBAction)handleSwipe:(UISwipeGestureRecognizer *)recognizer
 {
-    [self performSegueWithIdentifier:@"mainToHomework" sender:self];
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+        [self performSegueWithIdentifier:@"mainToWeeklyWisdom" sender:self];
+    else
+        [self performSegueWithIdentifier:@"mainToHomework" sender:self];
 }
 
 

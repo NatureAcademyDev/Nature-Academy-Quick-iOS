@@ -24,6 +24,9 @@
 		C7D267A31E6C8EBB00C52D16 /* WeeklyWisdomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267A21E6C8EBB00C52D16 /* WeeklyWisdomViewController.m */; };
 		C7D267A41E6C8EBB00C52D16 /* WeeklyWisdomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267A21E6C8EBB00C52D16 /* WeeklyWisdomViewController.m */; };
 		C7D267A51E6C8EBB00C52D16 /* WeeklyWisdomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267A21E6C8EBB00C52D16 /* WeeklyWisdomViewController.m */; };
+		C7D267AB1E6C9C1800C52D16 /* nalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D267AA1E6C9C1800C52D16 /* nalogo.png */; };
+		C7D267AC1E6C9C1800C52D16 /* nalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D267AA1E6C9C1800C52D16 /* nalogo.png */; };
+		C7D267AD1E6C9C1800C52D16 /* nalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D267AA1E6C9C1800C52D16 /* nalogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,7 @@
 		C7D2679D1E6C8E4700C52D16 /* GradesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradesViewController.m; sourceTree = "<group>"; };
 		C7D267A11E6C8EBB00C52D16 /* WeeklyWisdomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeklyWisdomViewController.h; sourceTree = "<group>"; };
 		C7D267A21E6C8EBB00C52D16 /* WeeklyWisdomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeklyWisdomViewController.m; sourceTree = "<group>"; };
+		C7D267AA1E6C9C1800C52D16 /* nalogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nalogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 		C7D267631E6C890C00C52D16 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C7D267AA1E6C9C1800C52D16 /* nalogo.png */,
 				C7D267641E6C890C00C52D16 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -268,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D267731E6C890C00C52D16 /* LaunchScreen.storyboard in Resources */,
+				C7D267AB1E6C9C1800C52D16 /* nalogo.png in Resources */,
 				C7D267701E6C890C00C52D16 /* Assets.xcassets in Resources */,
 				C7D2676E1E6C890C00C52D16 /* Main.storyboard in Resources */,
 			);
@@ -277,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D267AC1E6C9C1800C52D16 /* nalogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D267AD1E6C9C1800C52D16 /* nalogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
