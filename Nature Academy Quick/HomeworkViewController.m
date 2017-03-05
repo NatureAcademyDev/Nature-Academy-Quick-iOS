@@ -9,6 +9,7 @@
 #import "HomeworkViewController.h"
 
 @interface HomeworkViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *homeworkGoolgeCalendarView;
 
 @end
 
@@ -17,6 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    NSString* strURL = @"https://calendar.google.com/calendar/embed?mode=WEEK&height=600&wkst=2&bgcolor=%23FFFFFF&src=slvusd.org_3gna4bju3m4qji11ama7b85kek@group.calendar.google.com&color=%23711616&src=slvusd.org_02tvisam3pcog9dmn8ejrgi8mk@group.calendar.google.com&color=%230D7813&src=slvusd.org_p68uqeo4fa5sdd2li7om08p4ag@group.calendar.google.com&color=%23182C57&src=slvusd.org_boudqi1ln6v0udktggt0rkip0k@group.calendar.google.com&color=%23B1365F&src=slvusd.org_286euvklrcup2jensi3ikl9r7s@group.calendar.google.com&color=%238C500B&src=slvusd.org_5ne3m8onl7dlvggbljihrog8sc@group.calendar.google.com&color=%23853104&src=slvusd.org_s9o1rfb2c42uo0lismpiund8m4@group.calendar.google.com&color=%23125A12&ctz=America/Los_Angeles&pli=1";
+    
+    NSURL *url = [NSURL URLWithString:strURL];
+    
+    NSURLRequest* request=[NSURLRequest requestWithURL:url];
+    [self.homeworkGoolgeCalendarView loadRequest:request];
+    
 }
 
 - (void)didReceiveMemoryWarning {
