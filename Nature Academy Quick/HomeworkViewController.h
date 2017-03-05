@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeworkViewController.h
 //  Nature Academy Quick
 //
 //  Created by alisago on 3/5/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HomeworkViewController : UIViewController
 
 @end
-

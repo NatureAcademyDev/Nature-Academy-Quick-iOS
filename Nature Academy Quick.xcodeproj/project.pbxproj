@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		C7D267651E6C890C00C52D16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267641E6C890C00C52D16 /* main.m */; };
 		C7D267681E6C890C00C52D16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267671E6C890C00C52D16 /* AppDelegate.m */; };
-		C7D2676B1E6C890C00C52D16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D2676A1E6C890C00C52D16 /* ViewController.m */; };
+		C7D2676B1E6C890C00C52D16 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D2676A1E6C890C00C52D16 /* MainViewController.m */; };
 		C7D2676E1E6C890C00C52D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D2676C1E6C890C00C52D16 /* Main.storyboard */; };
 		C7D267701E6C890C00C52D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D2676F1E6C890C00C52D16 /* Assets.xcassets */; };
 		C7D267731E6C890C00C52D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D267711E6C890C00C52D16 /* LaunchScreen.storyboard */; };
 		C7D2677E1E6C890C00C52D16 /* Nature_Academy_QuickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D2677D1E6C890C00C52D16 /* Nature_Academy_QuickTests.m */; };
 		C7D267891E6C890C00C52D16 /* Nature_Academy_QuickUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267881E6C890C00C52D16 /* Nature_Academy_QuickUITests.m */; };
+		C7D267991E6C8DEA00C52D16 /* HomeworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267981E6C8DEA00C52D16 /* HomeworkViewController.m */; };
+		C7D2679A1E6C8DEA00C52D16 /* HomeworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267981E6C8DEA00C52D16 /* HomeworkViewController.m */; };
+		C7D2679B1E6C8DEA00C52D16 /* HomeworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267981E6C8DEA00C52D16 /* HomeworkViewController.m */; };
+		C7D2679E1E6C8E4700C52D16 /* GradesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D2679D1E6C8E4700C52D16 /* GradesViewController.m */; };
+		C7D2679F1E6C8E4700C52D16 /* GradesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D2679D1E6C8E4700C52D16 /* GradesViewController.m */; };
+		C7D267A01E6C8E4700C52D16 /* GradesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D2679D1E6C8E4700C52D16 /* GradesViewController.m */; };
+		C7D267A31E6C8EBB00C52D16 /* WeeklyWisdomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267A21E6C8EBB00C52D16 /* WeeklyWisdomViewController.m */; };
+		C7D267A41E6C8EBB00C52D16 /* WeeklyWisdomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267A21E6C8EBB00C52D16 /* WeeklyWisdomViewController.m */; };
+		C7D267A51E6C8EBB00C52D16 /* WeeklyWisdomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267A21E6C8EBB00C52D16 /* WeeklyWisdomViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +48,8 @@
 		C7D267641E6C890C00C52D16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7D267661E6C890C00C52D16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7D267671E6C890C00C52D16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C7D267691E6C890C00C52D16 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C7D2676A1E6C890C00C52D16 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C7D267691E6C890C00C52D16 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C7D2676A1E6C890C00C52D16 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		C7D2676D1E6C890C00C52D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7D2676F1E6C890C00C52D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7D267721E6C890C00C52D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +60,12 @@
 		C7D267841E6C890C00C52D16 /* Nature Academy QuickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nature Academy QuickUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D267881E6C890C00C52D16 /* Nature_Academy_QuickUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nature_Academy_QuickUITests.m; sourceTree = "<group>"; };
 		C7D2678A1E6C890C00C52D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7D267971E6C8DEA00C52D16 /* HomeworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeworkViewController.h; sourceTree = "<group>"; };
+		C7D267981E6C8DEA00C52D16 /* HomeworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeworkViewController.m; sourceTree = "<group>"; };
+		C7D2679C1E6C8E4700C52D16 /* GradesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradesViewController.h; sourceTree = "<group>"; };
+		C7D2679D1E6C8E4700C52D16 /* GradesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradesViewController.m; sourceTree = "<group>"; };
+		C7D267A11E6C8EBB00C52D16 /* WeeklyWisdomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeklyWisdomViewController.h; sourceTree = "<group>"; };
+		C7D267A21E6C8EBB00C52D16 /* WeeklyWisdomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeklyWisdomViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +118,14 @@
 			children = (
 				C7D267661E6C890C00C52D16 /* AppDelegate.h */,
 				C7D267671E6C890C00C52D16 /* AppDelegate.m */,
-				C7D267691E6C890C00C52D16 /* ViewController.h */,
-				C7D2676A1E6C890C00C52D16 /* ViewController.m */,
+				C7D267691E6C890C00C52D16 /* MainViewController.h */,
+				C7D2676A1E6C890C00C52D16 /* MainViewController.m */,
+				C7D267971E6C8DEA00C52D16 /* HomeworkViewController.h */,
+				C7D267981E6C8DEA00C52D16 /* HomeworkViewController.m */,
+				C7D2679C1E6C8E4700C52D16 /* GradesViewController.h */,
+				C7D2679D1E6C8E4700C52D16 /* GradesViewController.m */,
+				C7D267A11E6C8EBB00C52D16 /* WeeklyWisdomViewController.h */,
+				C7D267A21E6C8EBB00C52D16 /* WeeklyWisdomViewController.m */,
 				C7D2676C1E6C890C00C52D16 /* Main.storyboard */,
 				C7D2676F1E6C890C00C52D16 /* Assets.xcassets */,
 				C7D267711E6C890C00C52D16 /* LaunchScreen.storyboard */,
@@ -273,8 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D2676B1E6C890C00C52D16 /* ViewController.m in Sources */,
+				C7D2679E1E6C8E4700C52D16 /* GradesViewController.m in Sources */,
+				C7D2676B1E6C890C00C52D16 /* MainViewController.m in Sources */,
+				C7D267A31E6C8EBB00C52D16 /* WeeklyWisdomViewController.m in Sources */,
 				C7D267681E6C890C00C52D16 /* AppDelegate.m in Sources */,
+				C7D267991E6C8DEA00C52D16 /* HomeworkViewController.m in Sources */,
 				C7D267651E6C890C00C52D16 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D2679A1E6C8DEA00C52D16 /* HomeworkViewController.m in Sources */,
 				C7D2677E1E6C890C00C52D16 /* Nature_Academy_QuickTests.m in Sources */,
+				C7D267A41E6C8EBB00C52D16 /* WeeklyWisdomViewController.m in Sources */,
+				C7D2679F1E6C8E4700C52D16 /* GradesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D2679B1E6C8DEA00C52D16 /* HomeworkViewController.m in Sources */,
 				C7D267891E6C890C00C52D16 /* Nature_Academy_QuickUITests.m in Sources */,
+				C7D267A51E6C8EBB00C52D16 /* WeeklyWisdomViewController.m in Sources */,
+				C7D267A01E6C8E4700C52D16 /* GradesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

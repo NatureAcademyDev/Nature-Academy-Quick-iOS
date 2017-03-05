@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Main View Controller" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,150 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main NA Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXS-h9-OS0">
+                                <frame key="frameInset" minX="115" minY="38" width="173" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="91d-su-wA2" appends="YES" id="eQ2-uk-jO5"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <segue destination="ndz-xu-L3x" kind="presentation" identifier="mainToHomework" modalTransitionStyle="flipHorizontal" id="9ft-bQ-p84"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="91d-su-wA2" userLabel="Swipe Right">
+                    <connections>
+                        <action selector="handleSwipe:" destination="BYZ-38-t0r" id="HQO-sQ-gMA"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
+        </scene>
+        <!--Homework View Controller-->
+        <scene sceneID="0FM-xT-HY2">
+            <objects>
+                <viewController id="ndz-xu-L3x" userLabel="Homework View Controller" customClass="HomeworkViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="em9-tT-rRu"/>
+                        <viewControllerLayoutGuide type="bottom" id="nii-bO-IV3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z5d-bR-NH4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homework" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ld-7H-lYM">
+                                <frame key="frameInset" minX="115" minY="38" width="173" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JDS-UM-cCd" appends="YES" id="tD4-jI-TQb"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <segue destination="IaD-pD-aUR" kind="presentation" identifier="homeworkToGrades" modalTransitionStyle="flipHorizontal" id="Fo3-8y-aBC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHz-TS-2zR" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="JDS-UM-cCd" userLabel="Swipe Right">
+                    <connections>
+                        <action selector="handleSwipe:" destination="ndz-xu-L3x" id="cB4-oL-LcH"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="719" y="35"/>
+        </scene>
+        <!--Grades View Controller-->
+        <scene sceneID="Dk1-Wr-zZ6">
+            <objects>
+                <viewController id="IaD-pD-aUR" userLabel="Grades View Controller" customClass="GradesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bkO-Jo-xOf"/>
+                        <viewControllerLayoutGuide type="bottom" id="vel-g5-ln7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tsi-Sc-I8p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yq-Hg-tRp">
+                                <frame key="frameInset" minX="115" minY="38" width="173" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ySt-PW-8i1" appends="YES" id="ueL-aE-b4O"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <segue destination="eMw-uC-e4d" kind="presentation" identifier="gradesToWeeklyWisdom" modalTransitionStyle="flipHorizontal" id="ySJ-gY-59c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iG7-lZ-YOS" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="ySt-PW-8i1" userLabel="Swipe Right">
+                    <connections>
+                        <action selector="handleSwipe:" destination="IaD-pD-aUR" id="Sg2-rx-2kn"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="718" y="740"/>
+        </scene>
+        <!--Weekly Wisdom View Controller-->
+        <scene sceneID="uhs-6b-un1">
+            <objects>
+                <viewController id="eMw-uC-e4d" userLabel="Weekly Wisdom View Controller" customClass="WeeklyWisdomViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wXO-Z2-FrI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mrb-fu-aNN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hlT-1e-wwj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weekly Wisdom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isl-LW-644">
+                                <frame key="frameInset" minX="115" minY="38" width="173" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TcE-5U-cyz" appends="YES" id="5Sn-Lu-bBB"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="wisdomToMain" modalTransitionStyle="flipHorizontal" id="sAv-jc-a5E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycm-so-lze" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="TcE-5U-cyz" userLabel="Swipe Right">
+                    <connections>
+                        <action selector="handleSwipe:" destination="eMw-uC-e4d" id="nlx-zk-Hz0"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="25" y="740"/>
         </scene>
     </scenes>
 </document>

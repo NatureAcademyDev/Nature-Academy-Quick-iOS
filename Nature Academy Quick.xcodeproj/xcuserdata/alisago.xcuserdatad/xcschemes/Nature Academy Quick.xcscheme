@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C7D2675F1E6C890C00C52D16"
+               BuildableName = "Nature Academy Quick.app"
+               BlueprintName = "Nature Academy Quick"
+               ReferencedContainer = "container:Nature Academy Quick.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C7D267781E6C890C00C52D16"
+               BuildableName = "Nature Academy QuickTests.xctest"
+               BlueprintName = "Nature Academy QuickTests"
+               ReferencedContainer = "container:Nature Academy Quick.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C7D267831E6C890C00C52D16"
+               BuildableName = "Nature Academy QuickUITests.xctest"
+               BlueprintName = "Nature Academy QuickUITests"
+               ReferencedContainer = "container:Nature Academy Quick.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C7D2675F1E6C890C00C52D16"
+            BuildableName = "Nature Academy Quick.app"
+            BlueprintName = "Nature Academy Quick"
+            ReferencedContainer = "container:Nature Academy Quick.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C7D2675F1E6C890C00C52D16"
+            BuildableName = "Nature Academy Quick.app"
+            BlueprintName = "Nature Academy Quick"
+            ReferencedContainer = "container:Nature Academy Quick.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C7D2675F1E6C890C00C52D16"
+            BuildableName = "Nature Academy Quick.app"
+            BlueprintName = "Nature Academy Quick"
+            ReferencedContainer = "container:Nature Academy Quick.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

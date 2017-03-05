@@ -6,13 +6,13 @@
 //  Copyright © 2017 alisago. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,6 +23,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)handleSwipe:(UISwipeGestureRecognizer *)recognizer
+{
+    [self performSegueWithIdentifier:@"mainToHomework" sender:self];
 }
 
 
