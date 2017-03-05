@@ -19,20 +19,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main NA Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXS-h9-OS0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Main NA Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXS-h9-OS0">
                                 <frame key="frameInset" minX="115" minY="38" width="173" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="tqg-Eg-Rkk">
-                                <frame key="frameInset" minX="8" minY="20" width="127" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="tqg-Eg-Rkk"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="bXS-h9-OS0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="99" id="8GH-uh-jjG"/>
+                            <constraint firstItem="tqg-Eg-Rkk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GRe-0b-Plg"/>
+                            <constraint firstItem="tqg-Eg-Rkk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="MRT-wl-MdE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bXS-h9-OS0" secondAttribute="trailing" constant="16" id="dox-vq-h6a"/>
+                            <constraint firstItem="bXS-h9-OS0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="pOb-5i-C8D"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="91d-su-wA2" appends="YES" id="eQ2-uk-jO5"/>
                             <outletCollection property="gestureRecognizers" destination="ddR-T0-Xuk" appends="YES" id="BbE-Th-2gv"/>
@@ -66,7 +69,7 @@
                         <viewControllerLayoutGuide type="bottom" id="nii-bO-IV3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z5d-bR-NH4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homework" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ld-7H-lYM">
@@ -74,7 +77,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cor-6a-JVa"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cor-6a-JVa">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="T6J-TE-WdX"/>
+                                    <constraint firstAttribute="height" constant="79" id="gUV-N0-0i0"/>
+                                </constraints>
+                            </imageView>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TNw-KE-a5N">
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
@@ -129,23 +137,30 @@
                         <viewControllerLayoutGuide type="bottom" id="vel-g5-ln7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Tsi-Sc-I8p">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yq-Hg-tRp">
-                                <frame key="frameInset" minX="115" minY="38" width="173" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yq-Hg-tRp">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ixw-Jb-mGW">
-                                <frame key="frameInset" minX="8" minY="20" width="127" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ixw-Jb-mGW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="TnD-po-qwP"/>
+                                    <constraint firstAttribute="width" constant="84" id="pFJ-FC-wU0"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="6yq-Hg-tRp" secondAttribute="trailing" constant="67" id="0bH-h9-QFW"/>
+                            <constraint firstItem="Ixw-Jb-mGW" firstAttribute="top" secondItem="bkO-Jo-xOf" secondAttribute="bottom" id="A4M-Ed-cb0"/>
+                            <constraint firstItem="Ixw-Jb-mGW" firstAttribute="leading" secondItem="Tsi-Sc-I8p" secondAttribute="leading" constant="8" id="G9d-uH-TWl"/>
+                            <constraint firstItem="6yq-Hg-tRp" firstAttribute="leading" secondItem="Tsi-Sc-I8p" secondAttribute="leadingMargin" constant="95" id="alt-3D-Q57"/>
+                            <constraint firstItem="6yq-Hg-tRp" firstAttribute="top" secondItem="bkO-Jo-xOf" secondAttribute="bottom" constant="18" id="k0M-4Q-Blx"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="ySt-PW-8i1" appends="YES" id="ueL-aE-b4O"/>
                             <outletCollection property="gestureRecognizers" destination="dUY-W8-jRe" appends="YES" id="Pgm-BE-U8Q"/>
@@ -179,23 +194,30 @@
                         <viewControllerLayoutGuide type="bottom" id="Mrb-fu-aNN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hlT-1e-wwj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weekly Wisdom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isl-LW-644">
-                                <frame key="frameInset" minX="115" minY="38" width="173" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Wisdom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isl-LW-644">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="UqC-Zz-1FZ">
-                                <frame key="frameInset" minX="8" minY="20" width="127" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="UqC-Zz-1FZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="NEm-jx-O5L"/>
+                                    <constraint firstAttribute="width" constant="84" id="iOn-QC-n9D"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="isl-LW-644" secondAttribute="trailing" constant="71" id="1xI-32-qhA"/>
+                            <constraint firstItem="UqC-Zz-1FZ" firstAttribute="top" secondItem="wXO-Z2-FrI" secondAttribute="bottom" id="IaA-pX-JWY"/>
+                            <constraint firstItem="UqC-Zz-1FZ" firstAttribute="leading" secondItem="hlT-1e-wwj" secondAttribute="leading" constant="8" id="Ij2-TA-pYS"/>
+                            <constraint firstItem="isl-LW-644" firstAttribute="leading" secondItem="hlT-1e-wwj" secondAttribute="leadingMargin" constant="99" id="TUN-hK-8b6"/>
+                            <constraint firstItem="isl-LW-644" firstAttribute="top" secondItem="wXO-Z2-FrI" secondAttribute="bottom" constant="18" id="l9C-Fe-NC9"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="TcE-5U-cyz" appends="YES" id="5Sn-Lu-bBB"/>
                             <outletCollection property="gestureRecognizers" destination="CVe-rk-LTa" appends="YES" id="JOK-Xp-8Rp"/>
@@ -225,9 +247,9 @@
         <image name="nalogo.png" width="84" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9ft-bQ-p84"/>
-        <segue reference="GwU-GR-jKz"/>
-        <segue reference="prn-FT-nmG"/>
-        <segue reference="Fo3-8y-aBC"/>
+        <segue reference="f84-jy-nPz"/>
+        <segue reference="0Ur-OF-cwT"/>
+        <segue reference="ySJ-gY-59c"/>
+        <segue reference="sAv-jc-a5E"/>
     </inferredMetricsTieBreakers>
 </document>
