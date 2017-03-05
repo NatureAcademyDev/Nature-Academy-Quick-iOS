@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7D267651E6C890C00C52D16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267641E6C890C00C52D16 /* main.m */; };
+		C7D267681E6C890C00C52D16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267671E6C890C00C52D16 /* AppDelegate.m */; };
+		C7D2676B1E6C890C00C52D16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D2676A1E6C890C00C52D16 /* ViewController.m */; };
+		C7D2676E1E6C890C00C52D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D2676C1E6C890C00C52D16 /* Main.storyboard */; };
+		C7D267701E6C890C00C52D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D2676F1E6C890C00C52D16 /* Assets.xcassets */; };
+		C7D267731E6C890C00C52D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D267711E6C890C00C52D16 /* LaunchScreen.storyboard */; };
+		C7D2677E1E6C890C00C52D16 /* Nature_Academy_QuickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D2677D1E6C890C00C52D16 /* Nature_Academy_QuickTests.m */; };
+		C7D267891E6C890C00C52D16 /* Nature_Academy_QuickUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D267881E6C890C00C52D16 /* Nature_Academy_QuickUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7D2677A1E6C890C00C52D16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7D267581E6C890C00C52D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7D2675F1E6C890C00C52D16;
+			remoteInfo = "Nature Academy Quick";
+		};
+		C7D267851E6C890C00C52D16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7D267581E6C890C00C52D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7D2675F1E6C890C00C52D16;
+			remoteInfo = "Nature Academy Quick";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7D267601E6C890C00C52D16 /* Nature Academy Quick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nature Academy Quick.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7D267641E6C890C00C52D16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7D267661E6C890C00C52D16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C7D267671E6C890C00C52D16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C7D267691E6C890C00C52D16 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C7D2676A1E6C890C00C52D16 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C7D2676D1E6C890C00C52D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7D2676F1E6C890C00C52D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7D267721E6C890C00C52D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7D267741E6C890C00C52D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7D267791E6C890C00C52D16 /* Nature Academy QuickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nature Academy QuickTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7D2677D1E6C890C00C52D16 /* Nature_Academy_QuickTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nature_Academy_QuickTests.m; sourceTree = "<group>"; };
+		C7D2677F1E6C890C00C52D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7D267841E6C890C00C52D16 /* Nature Academy QuickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nature Academy QuickUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7D267881E6C890C00C52D16 /* Nature_Academy_QuickUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nature_Academy_QuickUITests.m; sourceTree = "<group>"; };
+		C7D2678A1E6C890C00C52D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7D2675D1E6C890C00C52D16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7D267761E6C890C00C52D16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7D267811E6C890C00C52D16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7D267571E6C890C00C52D16 = {
+			isa = PBXGroup;
+			children = (
+				C7D267621E6C890C00C52D16 /* Nature Academy Quick */,
+				C7D2677C1E6C890C00C52D16 /* Nature Academy QuickTests */,
+				C7D267871E6C890C00C52D16 /* Nature Academy QuickUITests */,
+				C7D267611E6C890C00C52D16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7D267611E6C890C00C52D16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7D267601E6C890C00C52D16 /* Nature Academy Quick.app */,
+				C7D267791E6C890C00C52D16 /* Nature Academy QuickTests.xctest */,
+				C7D267841E6C890C00C52D16 /* Nature Academy QuickUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7D267621E6C890C00C52D16 /* Nature Academy Quick */ = {
+			isa = PBXGroup;
+			children = (
+				C7D267661E6C890C00C52D16 /* AppDelegate.h */,
+				C7D267671E6C890C00C52D16 /* AppDelegate.m */,
+				C7D267691E6C890C00C52D16 /* ViewController.h */,
+				C7D2676A1E6C890C00C52D16 /* ViewController.m */,
+				C7D2676C1E6C890C00C52D16 /* Main.storyboard */,
+				C7D2676F1E6C890C00C52D16 /* Assets.xcassets */,
+				C7D267711E6C890C00C52D16 /* LaunchScreen.storyboard */,
+				C7D267741E6C890C00C52D16 /* Info.plist */,
+				C7D267631E6C890C00C52D16 /* Supporting Files */,
+			);
+			path = "Nature Academy Quick";
+			sourceTree = "<group>";
+		};
+		C7D267631E6C890C00C52D16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7D267641E6C890C00C52D16 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7D2677C1E6C890C00C52D16 /* Nature Academy QuickTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7D2677D1E6C890C00C52D16 /* Nature_Academy_QuickTests.m */,
+				C7D2677F1E6C890C00C52D16 /* Info.plist */,
+			);
+			path = "Nature Academy QuickTests";
+			sourceTree = "<group>";
+		};
+		C7D267871E6C890C00C52D16 /* Nature Academy QuickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C7D267881E6C890C00C52D16 /* Nature_Academy_QuickUITests.m */,
+				C7D2678A1E6C890C00C52D16 /* Info.plist */,
+			);
+			path = "Nature Academy QuickUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7D2675F1E6C890C00C52D16 /* Nature Academy Quick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7D2678D1E6C890C00C52D16 /* Build configuration list for PBXNativeTarget "Nature Academy Quick" */;
+			buildPhases = (
+				C7D2675C1E6C890C00C52D16 /* Sources */,
+				C7D2675D1E6C890C00C52D16 /* Frameworks */,
+				C7D2675E1E6C890C00C52D16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nature Academy Quick";
+			productName = "Nature Academy Quick";
+			productReference = C7D267601E6C890C00C52D16 /* Nature Academy Quick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7D267781E6C890C00C52D16 /* Nature Academy QuickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7D267901E6C890C00C52D16 /* Build configuration list for PBXNativeTarget "Nature Academy QuickTests" */;
+			buildPhases = (
+				C7D267751E6C890C00C52D16 /* Sources */,
+				C7D267761E6C890C00C52D16 /* Frameworks */,
+				C7D267771E6C890C00C52D16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7D2677B1E6C890C00C52D16 /* PBXTargetDependency */,
+			);
+			name = "Nature Academy QuickTests";
+			productName = "Nature Academy QuickTests";
+			productReference = C7D267791E6C890C00C52D16 /* Nature Academy QuickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C7D267831E6C890C00C52D16 /* Nature Academy QuickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7D267931E6C890C00C52D16 /* Build configuration list for PBXNativeTarget "Nature Academy QuickUITests" */;
+			buildPhases = (
+				C7D267801E6C890C00C52D16 /* Sources */,
+				C7D267811E6C890C00C52D16 /* Frameworks */,
+				C7D267821E6C890C00C52D16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7D267861E6C890C00C52D16 /* PBXTargetDependency */,
+			);
+			name = "Nature Academy QuickUITests";
+			productName = "Nature Academy QuickUITests";
+			productReference = C7D267841E6C890C00C52D16 /* Nature Academy QuickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7D267581E6C890C00C52D16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = alisago;
+				TargetAttributes = {
+					C7D2675F1E6C890C00C52D16 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					C7D267781E6C890C00C52D16 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C7D2675F1E6C890C00C52D16;
+					};
+					C7D267831E6C890C00C52D16 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C7D2675F1E6C890C00C52D16;
+					};
+				};
+			};
+			buildConfigurationList = C7D2675B1E6C890C00C52D16 /* Build configuration list for PBXProject "Nature Academy Quick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7D267571E6C890C00C52D16;
+			productRefGroup = C7D267611E6C890C00C52D16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7D2675F1E6C890C00C52D16 /* Nature Academy Quick */,
+				C7D267781E6C890C00C52D16 /* Nature Academy QuickTests */,
+				C7D267831E6C890C00C52D16 /* Nature Academy QuickUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7D2675E1E6C890C00C52D16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D267731E6C890C00C52D16 /* LaunchScreen.storyboard in Resources */,
+				C7D267701E6C890C00C52D16 /* Assets.xcassets in Resources */,
+				C7D2676E1E6C890C00C52D16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7D267771E6C890C00C52D16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7D267821E6C890C00C52D16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7D2675C1E6C890C00C52D16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D2676B1E6C890C00C52D16 /* ViewController.m in Sources */,
+				C7D267681E6C890C00C52D16 /* AppDelegate.m in Sources */,
+				C7D267651E6C890C00C52D16 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7D267751E6C890C00C52D16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D2677E1E6C890C00C52D16 /* Nature_Academy_QuickTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7D267801E6C890C00C52D16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D267891E6C890C00C52D16 /* Nature_Academy_QuickUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7D2677B1E6C890C00C52D16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7D2675F1E6C890C00C52D16 /* Nature Academy Quick */;
+			targetProxy = C7D2677A1E6C890C00C52D16 /* PBXContainerItemProxy */;
+		};
+		C7D267861E6C890C00C52D16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7D2675F1E6C890C00C52D16 /* Nature Academy Quick */;
+			targetProxy = C7D267851E6C890C00C52D16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7D2676C1E6C890C00C52D16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7D2676D1E6C890C00C52D16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7D267711E6C890C00C52D16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7D267721E6C890C00C52D16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7D2678B1E6C890C00C52D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7D2678C1E6C890C00C52D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7D2678E1E6C890C00C52D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Nature Academy Quick/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.slvusd.na.Nature-Academy-Quick";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C7D2678F1E6C890C00C52D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Nature Academy Quick/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.slvusd.na.Nature-Academy-Quick";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C7D267911E6C890C00C52D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Nature Academy QuickTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.slvusd.na.Nature-Academy-QuickTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nature Academy Quick.app/Nature Academy Quick";
+			};
+			name = Debug;
+		};
+		C7D267921E6C890C00C52D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Nature Academy QuickTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.slvusd.na.Nature-Academy-QuickTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nature Academy Quick.app/Nature Academy Quick";
+			};
+			name = Release;
+		};
+		C7D267941E6C890C00C52D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Nature Academy QuickUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.slvusd.na.Nature-Academy-QuickUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Nature Academy Quick";
+			};
+			name = Debug;
+		};
+		C7D267951E6C890C00C52D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Nature Academy QuickUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.slvusd.na.Nature-Academy-QuickUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Nature Academy Quick";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7D2675B1E6C890C00C52D16 /* Build configuration list for PBXProject "Nature Academy Quick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7D2678B1E6C890C00C52D16 /* Debug */,
+				C7D2678C1E6C890C00C52D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7D2678D1E6C890C00C52D16 /* Build configuration list for PBXNativeTarget "Nature Academy Quick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7D2678E1E6C890C00C52D16 /* Debug */,
+				C7D2678F1E6C890C00C52D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C7D267901E6C890C00C52D16 /* Build configuration list for PBXNativeTarget "Nature Academy QuickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7D267911E6C890C00C52D16 /* Debug */,
+				C7D267921E6C890C00C52D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C7D267931E6C890C00C52D16 /* Build configuration list for PBXNativeTarget "Nature Academy QuickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7D267941E6C890C00C52D16 /* Debug */,
+				C7D267951E6C890C00C52D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7D267581E6C890C00C52D16 /* Project object */;
+}
