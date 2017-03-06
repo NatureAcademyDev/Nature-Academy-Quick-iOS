@@ -9,7 +9,7 @@
 #import "HomeworkViewController.h"
 
 @interface HomeworkViewController ()
-@property (weak, nonatomic) IBOutlet UIWebView *homeworkGoolgeCalendarView;
+@property (weak, nonatomic) IBOutlet UIWebView *homeworkGoogleCalendarView;
 
 @end
 
@@ -23,8 +23,8 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     // Add border to the calendar view
-    self.homeworkGoolgeCalendarView.layer.borderColor = [UIColor blackColor].CGColor;
-    self.homeworkGoolgeCalendarView.layer.borderWidth = 1.0f;
+    self.homeworkGoogleCalendarView.layer.borderColor = [UIColor blackColor].CGColor;
+    self.homeworkGoogleCalendarView.layer.borderWidth = 1.0f;
     
     
     // Fill the calendar view from the web
@@ -33,7 +33,7 @@
     NSURL *url = [NSURL URLWithString:strURL];
     
     NSURLRequest* request=[NSURLRequest requestWithURL:url];
-    [self.homeworkGoolgeCalendarView loadRequest:request];
+    [self.homeworkGoogleCalendarView loadRequest:request];
     
 }
 

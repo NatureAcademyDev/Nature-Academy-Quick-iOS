@@ -27,6 +27,9 @@
 		C7D267AB1E6C9C1800C52D16 /* nalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D267AA1E6C9C1800C52D16 /* nalogo.png */; };
 		C7D267AC1E6C9C1800C52D16 /* nalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D267AA1E6C9C1800C52D16 /* nalogo.png */; };
 		C7D267AD1E6C9C1800C52D16 /* nalogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D267AA1E6C9C1800C52D16 /* nalogo.png */; };
+		C7D267AF1E6D26FD00C52D16 /* wisdomOfWeek.html in Resources */ = {isa = PBXBuildFile; fileRef = C7D267AE1E6D26FD00C52D16 /* wisdomOfWeek.html */; };
+		C7D267B01E6D26FD00C52D16 /* wisdomOfWeek.html in Resources */ = {isa = PBXBuildFile; fileRef = C7D267AE1E6D26FD00C52D16 /* wisdomOfWeek.html */; };
+		C7D267B11E6D26FD00C52D16 /* wisdomOfWeek.html in Resources */ = {isa = PBXBuildFile; fileRef = C7D267AE1E6D26FD00C52D16 /* wisdomOfWeek.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,7 @@
 		C7D267A11E6C8EBB00C52D16 /* WeeklyWisdomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeklyWisdomViewController.h; sourceTree = "<group>"; };
 		C7D267A21E6C8EBB00C52D16 /* WeeklyWisdomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeklyWisdomViewController.m; sourceTree = "<group>"; };
 		C7D267AA1E6C9C1800C52D16 /* nalogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nalogo.png; sourceTree = "<group>"; };
+		C7D267AE1E6D26FD00C52D16 /* wisdomOfWeek.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wisdomOfWeek.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,7 @@
 		C7D267631E6C890C00C52D16 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C7D267AE1E6D26FD00C52D16 /* wisdomOfWeek.html */,
 				C7D267AA1E6C9C1800C52D16 /* nalogo.png */,
 				C7D267641E6C890C00C52D16 /* main.m */,
 			);
@@ -272,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D267AF1E6D26FD00C52D16 /* wisdomOfWeek.html in Resources */,
 				C7D267731E6C890C00C52D16 /* LaunchScreen.storyboard in Resources */,
 				C7D267AB1E6C9C1800C52D16 /* nalogo.png in Resources */,
 				C7D267701E6C890C00C52D16 /* Assets.xcassets in Resources */,
@@ -283,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D267B01E6D26FD00C52D16 /* wisdomOfWeek.html in Resources */,
 				C7D267AC1E6C9C1800C52D16 /* nalogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D267B11E6D26FD00C52D16 /* wisdomOfWeek.html in Resources */,
 				C7D267AD1E6C9C1800C52D16 /* nalogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

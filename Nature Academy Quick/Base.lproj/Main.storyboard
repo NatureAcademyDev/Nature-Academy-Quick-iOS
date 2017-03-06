@@ -19,22 +19,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Main NA Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXS-h9-OS0">
-                                <frame key="frameInset" minX="115" minY="38" width="173" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLV Nature Academy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXS-h9-OS0">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="tqg-Eg-Rkk"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DQl-HV-jxc">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xeg-OG-eBm">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xeg-OG-eBm" secondAttribute="bottom" constant="8" id="2nF-2T-rk3"/>
                             <constraint firstItem="bXS-h9-OS0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="99" id="8GH-uh-jjG"/>
+                            <constraint firstItem="DQl-HV-jxc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="C0L-c4-m8f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DQl-HV-jxc" secondAttribute="trailing" constant="8" id="ExE-DB-yUL"/>
                             <constraint firstItem="tqg-Eg-Rkk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="GRe-0b-Plg"/>
+                            <constraint firstItem="DQl-HV-jxc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IdX-9L-Odx"/>
                             <constraint firstItem="tqg-Eg-Rkk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="MRT-wl-MdE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bXS-h9-OS0" secondAttribute="trailing" constant="16" id="dox-vq-h6a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xeg-OG-eBm" secondAttribute="trailing" constant="8" id="Rpz-O9-yQl"/>
+                            <constraint firstItem="Xeg-OG-eBm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="cwG-jK-fsz"/>
+                            <constraint firstItem="Xeg-OG-eBm" firstAttribute="top" secondItem="DQl-HV-jxc" secondAttribute="bottom" constant="12" id="ezf-Ge-4pE"/>
+                            <constraint firstItem="DQl-HV-jxc" firstAttribute="top" secondItem="tqg-Eg-Rkk" secondAttribute="bottom" constant="40" id="mS8-rX-Pb7"/>
                             <constraint firstItem="bXS-h9-OS0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="pOb-5i-C8D"/>
+                            <constraint firstItem="Xeg-OG-eBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vro-cg-8x6"/>
+                            <constraint firstItem="DQl-HV-jxc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vw4-R5-i1r"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="91d-su-wA2" appends="YES" id="eQ2-uk-jO5"/>
@@ -42,6 +56,8 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="homeworkGoogleCalendarView" destination="DQl-HV-jxc" id="ZqW-s7-2Me"/>
+                        <outlet property="wisdomOfWeekView" destination="Xeg-OG-eBm" id="lJZ-8N-0HW"/>
                         <segue destination="ndz-xu-L3x" kind="presentation" identifier="mainToHomework" id="9ft-bQ-p84"/>
                         <segue destination="eMw-uC-e4d" kind="presentation" identifier="mainToWeeklyWisdom" id="prn-FT-nmG"/>
                     </connections>
@@ -58,7 +74,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
+            <point key="canvasLocation" x="129.375" y="2.112676056338028"/>
         </scene>
         <!--Homework View Controller-->
         <scene sceneID="0FM-xT-HY2">
@@ -69,7 +85,7 @@
                         <viewControllerLayoutGuide type="bottom" id="nii-bO-IV3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z5d-bR-NH4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homework" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ld-7H-lYM">
@@ -94,14 +110,13 @@
                             <constraint firstItem="TNw-KE-a5N" firstAttribute="leading" secondItem="Z5d-bR-NH4" secondAttribute="leading" constant="12" id="F0p-aG-CqA"/>
                             <constraint firstItem="Cor-6a-JVa" firstAttribute="leading" secondItem="Z5d-bR-NH4" secondAttribute="leading" constant="8" id="Ghe-f8-xCl"/>
                             <constraint firstAttribute="trailing" secondItem="TNw-KE-a5N" secondAttribute="trailing" constant="12" id="H4c-zJ-tXu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9ld-7H-lYM" secondAttribute="trailing" constant="71" id="NuU-5t-dYT"/>
-                            <constraint firstItem="Cor-6a-JVa" firstAttribute="top" secondItem="em9-tT-rRu" secondAttribute="bottom" id="Thf-05-WoQ"/>
+                            <constraint firstItem="TNw-KE-a5N" firstAttribute="centerX" secondItem="Z5d-bR-NH4" secondAttribute="centerX" id="LgO-uf-LkI"/>
                             <constraint firstItem="Cor-6a-JVa" firstAttribute="leading" secondItem="Z5d-bR-NH4" secondAttribute="leadingMargin" constant="-8" id="Ugq-M4-fSa"/>
+                            <constraint firstItem="nii-bO-IV3" firstAttribute="top" secondItem="TNw-KE-a5N" secondAttribute="bottom" id="WQd-cv-oQH"/>
                             <constraint firstItem="TNw-KE-a5N" firstAttribute="top" secondItem="Cor-6a-JVa" secondAttribute="bottom" constant="15" id="XEa-sp-Jtq"/>
-                            <constraint firstItem="nii-bO-IV3" firstAttribute="top" secondItem="TNw-KE-a5N" secondAttribute="bottom" id="d7m-Iy-HSm"/>
-                            <constraint firstItem="9ld-7H-lYM" firstAttribute="top" secondItem="em9-tT-rRu" secondAttribute="bottom" constant="18" id="iqL-uB-Cmd"/>
-                            <constraint firstItem="TNw-KE-a5N" firstAttribute="top" secondItem="Cor-6a-JVa" secondAttribute="bottom" constant="15" id="u07-eM-PlT"/>
-                            <constraint firstItem="Cor-6a-JVa" firstAttribute="top" secondItem="em9-tT-rRu" secondAttribute="bottom" id="zud-UH-gkK"/>
+                            <constraint firstItem="Cor-6a-JVa" firstAttribute="top" secondItem="em9-tT-rRu" secondAttribute="bottom" id="bHG-vv-YFF"/>
+                            <constraint firstItem="9ld-7H-lYM" firstAttribute="top" secondItem="em9-tT-rRu" secondAttribute="bottom" constant="18" id="pEz-bz-oUR"/>
+                            <constraint firstItem="Cor-6a-JVa" firstAttribute="top" secondItem="em9-tT-rRu" secondAttribute="bottom" id="xiD-pd-U2E"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="JDS-UM-cCd" appends="YES" id="tD4-jI-TQb"/>
@@ -109,7 +124,7 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="homeworkGoolgeCalendarView" destination="TNw-KE-a5N" id="ewK-Vh-sNF"/>
+                        <outlet property="homeworkGoogleCalendarView" destination="TNw-KE-a5N" id="y0d-bw-dOW"/>
                         <segue destination="IaD-pD-aUR" kind="presentation" identifier="homeworkToGrades" id="Fo3-8y-aBC"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="homeworkToMain" id="GwU-GR-jKz"/>
                     </connections>
@@ -126,7 +141,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="717.60000000000002" y="34.632683658170919"/>
+            <point key="canvasLocation" x="1180" y="4"/>
         </scene>
         <!--Grades View Controller-->
         <scene sceneID="Dk1-Wr-zZ6">
@@ -137,7 +152,7 @@
                         <viewControllerLayoutGuide type="bottom" id="vel-g5-ln7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Tsi-Sc-I8p">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yq-Hg-tRp">
@@ -183,7 +198,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="942" y="740"/>
+            <point key="canvasLocation" x="1178" y="955"/>
         </scene>
         <!--Weekly Wisdom View Controller-->
         <scene sceneID="uhs-6b-un1">
@@ -194,7 +209,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Mrb-fu-aNN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hlT-1e-wwj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Wisdom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isl-LW-644">
@@ -240,16 +255,16 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="25" y="740"/>
+            <point key="canvasLocation" x="131" y="955"/>
         </scene>
     </scenes>
     <resources>
         <image name="nalogo.png" width="84" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="f84-jy-nPz"/>
-        <segue reference="0Ur-OF-cwT"/>
-        <segue reference="ySJ-gY-59c"/>
-        <segue reference="sAv-jc-a5E"/>
+        <segue reference="9ft-bQ-p84"/>
+        <segue reference="GwU-GR-jKz"/>
+        <segue reference="prn-FT-nmG"/>
+        <segue reference="Fo3-8y-aBC"/>
     </inferredMetricsTieBreakers>
 </document>
