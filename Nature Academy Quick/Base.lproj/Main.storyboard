@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -166,15 +165,22 @@
                                     <constraint firstAttribute="width" constant="84" id="pFJ-FC-wU0"/>
                                 </constraints>
                             </imageView>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UeC-qr-aay" userLabel="PowerSchool View">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="6yq-Hg-tRp" secondAttribute="trailing" constant="67" id="0bH-h9-QFW"/>
+                            <constraint firstItem="UeC-qr-aay" firstAttribute="top" secondItem="Ixw-Jb-mGW" secondAttribute="bottom" constant="15" id="7fo-OB-UtM"/>
                             <constraint firstItem="Ixw-Jb-mGW" firstAttribute="top" secondItem="bkO-Jo-xOf" secondAttribute="bottom" id="A4M-Ed-cb0"/>
                             <constraint firstItem="Ixw-Jb-mGW" firstAttribute="leading" secondItem="Tsi-Sc-I8p" secondAttribute="leading" constant="8" id="G9d-uH-TWl"/>
                             <constraint firstItem="6yq-Hg-tRp" firstAttribute="leading" secondItem="Tsi-Sc-I8p" secondAttribute="leadingMargin" constant="95" id="alt-3D-Q57"/>
+                            <constraint firstItem="UeC-qr-aay" firstAttribute="leading" secondItem="Tsi-Sc-I8p" secondAttribute="leading" constant="12" id="dTQ-VD-aeZ"/>
+                            <constraint firstItem="vel-g5-ln7" firstAttribute="top" secondItem="UeC-qr-aay" secondAttribute="bottom" id="hVQ-cy-EAz"/>
                             <constraint firstItem="6yq-Hg-tRp" firstAttribute="top" secondItem="bkO-Jo-xOf" secondAttribute="bottom" constant="18" id="k0M-4Q-Blx"/>
+                            <constraint firstItem="UeC-qr-aay" firstAttribute="centerX" secondItem="Tsi-Sc-I8p" secondAttribute="centerX" id="oEC-cR-Wap"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="ySt-PW-8i1" appends="YES" id="ueL-aE-b4O"/>
@@ -182,6 +188,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="powerSchoolView" destination="UeC-qr-aay" id="IN8-Gn-MCR"/>
                         <segue destination="eMw-uC-e4d" kind="presentation" identifier="gradesToWeeklyWisdom" id="ySJ-gY-59c"/>
                         <segue destination="ndz-xu-L3x" kind="presentation" identifier="gradesToHomework" id="f84-jy-nPz"/>
                     </connections>
@@ -198,7 +205,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1178" y="955"/>
+            <point key="canvasLocation" x="1177.5" y="954.92957746478874"/>
         </scene>
         <!--Weekly Wisdom View Controller-->
         <scene sceneID="uhs-6b-un1">
@@ -262,9 +269,9 @@
         <image name="nalogo.png" width="84" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9ft-bQ-p84"/>
-        <segue reference="GwU-GR-jKz"/>
-        <segue reference="prn-FT-nmG"/>
+        <segue reference="ySJ-gY-59c"/>
         <segue reference="Fo3-8y-aBC"/>
+        <segue reference="f84-jy-nPz"/>
+        <segue reference="GwU-GR-jKz"/>
     </inferredMetricsTieBreakers>
 </document>

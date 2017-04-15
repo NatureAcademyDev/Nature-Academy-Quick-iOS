@@ -238,6 +238,7 @@
 				TargetAttributes = {
 					C7D2675F1E6C890C00C52D16 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = KLM4L6BF2R;
 						ProvisioningStyle = Automatic;
 					};
 					C7D267781E6C890C00C52D16 = {
@@ -470,10 +471,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KLM4L6BF2R;
 				INFOPLIST_FILE = "Nature Academy Quick/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.slvusd.na.Nature-Academy-Quick";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -481,10 +485,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KLM4L6BF2R;
 				INFOPLIST_FILE = "Nature Academy Quick/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.slvusd.na.Nature-Academy-Quick";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

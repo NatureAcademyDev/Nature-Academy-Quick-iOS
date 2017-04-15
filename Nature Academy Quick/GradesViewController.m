@@ -9,6 +9,7 @@
 #import "GradesViewController.h"
 
 @interface GradesViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *powerSchoolView;
 
 @end
 
@@ -22,6 +23,23 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    // Add border to the calendar view
+    self.powerSchoolView.layer.borderColor = [UIColor blackColor].CGColor;
+    self.powerSchoolView.layer.borderWidth = 1.0f;
+    
+    
+    // Fill the calendar view from the web
+    NSString* strURL = @"https://grades.slvusd.org/public/";
+    
+    NSURL *url = [NSURL URLWithString:strURL];
+    
+    NSURLRequest* request=[NSURLRequest requestWithURL:url];
+    [self.powerSchoolView loadRequest:request];
+    
 }
 
 - (IBAction)handleSwipe:(UISwipeGestureRecognizer *)recognizer
