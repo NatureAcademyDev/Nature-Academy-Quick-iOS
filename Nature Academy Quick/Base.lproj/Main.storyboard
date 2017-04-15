@@ -230,14 +230,21 @@
                                     <constraint firstAttribute="width" constant="84" id="iOn-QC-n9D"/>
                                 </constraints>
                             </imageView>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1c-fr-tPD" userLabel="Weekly Wisdom Webview">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="isl-LW-644" secondAttribute="trailing" constant="71" id="1xI-32-qhA"/>
+                            <constraint firstItem="L1c-fr-tPD" firstAttribute="leading" secondItem="hlT-1e-wwj" secondAttribute="leading" constant="12" id="HgN-3i-7Iq"/>
                             <constraint firstItem="UqC-Zz-1FZ" firstAttribute="top" secondItem="wXO-Z2-FrI" secondAttribute="bottom" id="IaA-pX-JWY"/>
                             <constraint firstItem="UqC-Zz-1FZ" firstAttribute="leading" secondItem="hlT-1e-wwj" secondAttribute="leading" constant="8" id="Ij2-TA-pYS"/>
+                            <constraint firstItem="Mrb-fu-aNN" firstAttribute="top" secondItem="L1c-fr-tPD" secondAttribute="bottom" id="Lpj-Ii-Gq6"/>
+                            <constraint firstAttribute="trailing" secondItem="L1c-fr-tPD" secondAttribute="trailing" constant="12" id="QhA-Vc-Kg5"/>
                             <constraint firstItem="isl-LW-644" firstAttribute="leading" secondItem="hlT-1e-wwj" secondAttribute="leadingMargin" constant="99" id="TUN-hK-8b6"/>
+                            <constraint firstItem="L1c-fr-tPD" firstAttribute="top" secondItem="UqC-Zz-1FZ" secondAttribute="bottom" constant="15" id="X8w-Ja-gJQ"/>
                             <constraint firstItem="isl-LW-644" firstAttribute="top" secondItem="wXO-Z2-FrI" secondAttribute="bottom" constant="18" id="l9C-Fe-NC9"/>
                         </constraints>
                         <connections>
@@ -246,6 +253,7 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="weeklyWisdomView" destination="L1c-fr-tPD" id="qxv-r3-MJD"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="wisdomToMain" id="sAv-jc-a5E"/>
                         <segue destination="IaD-pD-aUR" kind="presentation" identifier="wisdomToGrades" id="0Ur-OF-cwT"/>
                     </connections>
@@ -269,9 +277,9 @@
         <image name="nalogo.png" width="84" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ySJ-gY-59c"/>
-        <segue reference="Fo3-8y-aBC"/>
-        <segue reference="f84-jy-nPz"/>
+        <segue reference="prn-FT-nmG"/>
         <segue reference="GwU-GR-jKz"/>
+        <segue reference="9ft-bQ-p84"/>
+        <segue reference="Fo3-8y-aBC"/>
     </inferredMetricsTieBreakers>
 </document>

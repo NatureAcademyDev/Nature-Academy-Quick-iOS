@@ -10,6 +10,8 @@
 
 @interface WeeklyWisdomViewController ()
 
+@property (weak, nonatomic) IBOutlet UIWebView *weeklyWisdomView;
+
 @end
 
 @implementation WeeklyWisdomViewController
@@ -17,6 +19,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    // Add border to the calendar view
+    self.weeklyWisdomView.layer.borderColor = [UIColor blackColor].CGColor;
+    self.weeklyWisdomView.layer.borderWidth = 1.0f;
+    
+    
+    // Fill the calendar view from the web
+    NSString* strURL = @"https://www.google.com";
+    
+    NSURL *url = [NSURL URLWithString:strURL];
+    
+    NSURLRequest* request=[NSURLRequest requestWithURL:url];
+    [self.weeklyWisdomView loadRequest:request];
+    
 }
 
 - (void)didReceiveMemoryWarning {
