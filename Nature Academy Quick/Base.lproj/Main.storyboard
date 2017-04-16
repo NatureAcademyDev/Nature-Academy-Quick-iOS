@@ -165,7 +165,8 @@
                                     <constraint firstAttribute="width" constant="84" id="pFJ-FC-wU0"/>
                                 </constraints>
                             </imageView>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UeC-qr-aay" userLabel="PowerSchool View">
+                            <webView contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UeC-qr-aay" userLabel="PowerSchool View">
+                                <frame key="frameInset" minX="16" minY="114" width="296" height="454"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
@@ -191,6 +192,7 @@
                         <outlet property="powerSchoolView" destination="UeC-qr-aay" id="IN8-Gn-MCR"/>
                         <segue destination="eMw-uC-e4d" kind="presentation" identifier="gradesToWeeklyWisdom" id="ySJ-gY-59c"/>
                         <segue destination="ndz-xu-L3x" kind="presentation" identifier="gradesToHomework" id="f84-jy-nPz"/>
+                        <segue destination="Rc6-xu-JUo" kind="presentation" identifier="gradesToLanguageArts" id="Ao2-e1-058"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iG7-lZ-YOS" sceneMemberID="firstResponder"/>
@@ -205,7 +207,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1177.5" y="954.92957746478874"/>
+            <point key="canvasLocation" x="1179" y="968"/>
         </scene>
         <!--Weekly Wisdom View Controller-->
         <scene sceneID="uhs-6b-un1">
@@ -256,6 +258,7 @@
                         <outlet property="weeklyWisdomView" destination="L1c-fr-tPD" id="qxv-r3-MJD"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="wisdomToMain" id="sAv-jc-a5E"/>
                         <segue destination="IaD-pD-aUR" kind="presentation" identifier="wisdomToGrades" id="0Ur-OF-cwT"/>
+                        <segue destination="8nQ-po-b6N" kind="presentation" identifier="weeklyWisdomToHistory" id="Prs-Va-69o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycm-so-lze" sceneMemberID="firstResponder"/>
@@ -272,14 +275,146 @@
             </objects>
             <point key="canvasLocation" x="131" y="955"/>
         </scene>
+        <!--Language Arts View Controller-->
+        <scene sceneID="gSq-k8-6TX">
+            <objects>
+                <viewController id="Rc6-xu-JUo" userLabel="Language Arts View Controller" customClass="GradesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vNd-9L-lBS"/>
+                        <viewControllerLayoutGuide type="bottom" id="fni-f0-bAA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mwj-u4-r4j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language Arts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8w-gZ-5xr">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="y8H-Wj-XyX">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="82V-sU-Zyy"/>
+                                    <constraint firstAttribute="width" constant="84" id="e9z-tK-Pzd"/>
+                                </constraints>
+                            </imageView>
+                            <webView contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ajt-8i-uYm" userLabel="PowerSchool View">
+                                <frame key="frameInset" minX="16" minY="114" width="296" height="454"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="R8w-gZ-5xr" secondAttribute="trailing" constant="67" id="0xh-cA-3S0"/>
+                            <constraint firstItem="Ajt-8i-uYm" firstAttribute="top" secondItem="y8H-Wj-XyX" secondAttribute="bottom" constant="15" id="3MN-7f-UAf"/>
+                            <constraint firstItem="y8H-Wj-XyX" firstAttribute="top" secondItem="vNd-9L-lBS" secondAttribute="bottom" id="QqS-Zf-cuK"/>
+                            <constraint firstItem="y8H-Wj-XyX" firstAttribute="leading" secondItem="Mwj-u4-r4j" secondAttribute="leading" constant="8" id="cN6-KV-8yo"/>
+                            <constraint firstItem="R8w-gZ-5xr" firstAttribute="leading" secondItem="Mwj-u4-r4j" secondAttribute="leadingMargin" constant="95" id="gzE-W4-VjY"/>
+                            <constraint firstItem="Ajt-8i-uYm" firstAttribute="centerX" secondItem="Mwj-u4-r4j" secondAttribute="centerX" id="lOU-v6-F4I"/>
+                            <constraint firstItem="Ajt-8i-uYm" firstAttribute="leading" secondItem="Mwj-u4-r4j" secondAttribute="leading" constant="12" id="n8r-Mj-dYa"/>
+                            <constraint firstItem="fni-f0-bAA" firstAttribute="top" secondItem="Ajt-8i-uYm" secondAttribute="bottom" id="qBK-Si-7yn"/>
+                            <constraint firstItem="R8w-gZ-5xr" firstAttribute="top" secondItem="vNd-9L-lBS" secondAttribute="bottom" constant="18" id="sJ0-sK-voy"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ebc-uo-Hf2" appends="YES" id="PAp-m1-4yh"/>
+                            <outletCollection property="gestureRecognizers" destination="7t0-Fl-YVb" appends="YES" id="jIV-tl-K6O"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <segue destination="8nQ-po-b6N" kind="presentation" identifier="languageArtsToHistory" id="qUM-bw-r8Q"/>
+                        <segue destination="IaD-pD-aUR" kind="presentation" identifier="languageArtsToGrades" id="MKg-mE-FdK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NyY-9M-0Nt" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="ebc-uo-Hf2" userLabel="Swipe Left">
+                    <connections>
+                        <action selector="handleSwipe:" destination="Rc6-xu-JUo" id="khv-bG-IXm"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="7t0-Fl-YVb" userLabel="Swipe Right">
+                    <connections>
+                        <action selector="handleSwipe:" destination="Rc6-xu-JUo" id="C1J-rU-la4"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1178" y="1755"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="ifL-Ke-0ls">
+            <objects>
+                <viewController id="8nQ-po-b6N" userLabel="History View Controller" customClass="GradesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J4W-zN-gmO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jaa-Nd-qQ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M2Z-Rh-bF1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38h-jd-LYJ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nalogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="lOz-Qo-9c5">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="2u3-gA-RaL"/>
+                                    <constraint firstAttribute="height" constant="79" id="nn8-d7-mgy"/>
+                                </constraints>
+                            </imageView>
+                            <webView contentMode="scaleToFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bwn-SH-EmI" userLabel="PowerSchool View">
+                                <frame key="frameInset" minX="16" minY="114" width="296" height="454"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Jaa-Nd-qQ3" firstAttribute="top" secondItem="bwn-SH-EmI" secondAttribute="bottom" id="52e-YH-uDi"/>
+                            <constraint firstItem="bwn-SH-EmI" firstAttribute="centerX" secondItem="M2Z-Rh-bF1" secondAttribute="centerX" id="8BR-6d-0D9"/>
+                            <constraint firstItem="38h-jd-LYJ" firstAttribute="top" secondItem="J4W-zN-gmO" secondAttribute="bottom" constant="18" id="8Jr-8x-AOU"/>
+                            <constraint firstItem="bwn-SH-EmI" firstAttribute="top" secondItem="lOz-Qo-9c5" secondAttribute="bottom" constant="15" id="HOu-PG-kLq"/>
+                            <constraint firstItem="lOz-Qo-9c5" firstAttribute="top" secondItem="J4W-zN-gmO" secondAttribute="bottom" id="O1e-v1-G8M"/>
+                            <constraint firstItem="38h-jd-LYJ" firstAttribute="leading" secondItem="M2Z-Rh-bF1" secondAttribute="leadingMargin" constant="95" id="T4W-fb-5Z0"/>
+                            <constraint firstItem="lOz-Qo-9c5" firstAttribute="leading" secondItem="M2Z-Rh-bF1" secondAttribute="leading" constant="8" id="W5c-My-FdP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="38h-jd-LYJ" secondAttribute="trailing" constant="67" id="bAE-TY-LgM"/>
+                            <constraint firstItem="bwn-SH-EmI" firstAttribute="leading" secondItem="M2Z-Rh-bF1" secondAttribute="leading" constant="12" id="uKT-Jd-z2d"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="SGJ-MR-rcX" appends="YES" id="J25-wm-SUN"/>
+                            <outletCollection property="gestureRecognizers" destination="VGP-Kl-683" appends="YES" id="hBm-ea-YRG"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <segue destination="eMw-uC-e4d" kind="presentation" identifier="historyToWeeklyWisdom" id="Odw-yI-eir"/>
+                        <segue destination="Rc6-xu-JUo" kind="presentation" identifier="historyToLanguageArts" id="8U5-mZ-kp9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w4f-gb-bOE" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="SGJ-MR-rcX" userLabel="Swipe Left">
+                    <connections>
+                        <action selector="handleSwipe:" destination="8nQ-po-b6N" id="SAN-hT-mGy"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="VGP-Kl-683" userLabel="Swipe Right">
+                    <connections>
+                        <action selector="handleSwipe:" destination="8nQ-po-b6N" id="CpR-ui-WOb"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="129" y="1755"/>
+        </scene>
     </scenes>
     <resources>
         <image name="nalogo.png" width="84" height="79"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="prn-FT-nmG"/>
-        <segue reference="GwU-GR-jKz"/>
-        <segue reference="9ft-bQ-p84"/>
-        <segue reference="Fo3-8y-aBC"/>
+        <segue reference="Odw-yI-eir"/>
+        <segue reference="Prs-Va-69o"/>
+        <segue reference="8U5-mZ-kp9"/>
+        <segue reference="MKg-mE-FdK"/>
+        <segue reference="f84-jy-nPz"/>
+        <segue reference="sAv-jc-a5E"/>
     </inferredMetricsTieBreakers>
 </document>
